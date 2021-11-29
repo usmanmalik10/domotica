@@ -5,13 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".login"
-    android:background="@drawable/bglogin"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/bg">
 
     <ImageView
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:src="@drawable/logo_trans"
+        android:src="@drawable/logo"
         android:layout_gravity="center"/>
 
 
@@ -22,7 +22,7 @@
         android:fontFamily="@font/baloo"
         android:gravity="center"
         android:text="WELCOME TO DOMOTICA"
-        android:textColor="@color/purple"
+        android:textColor="@color/white"
         android:textSize="30sp"/>
 
     <LinearLayout
@@ -33,7 +33,7 @@
 
         //Full Name
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/first_name"
+            android:id="@+id/full_name"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -44,7 +44,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="First Name"
+                android:hint="FullName"
                 android:inputType="text"
                 android:textColorHint="@color/white" />
 
@@ -55,7 +55,7 @@
 
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/last_name"
+            android:id="@+id/user_name"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -66,7 +66,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Last Name"
+                android:hint="UserName"
                 android:inputType="text"
                 android:textColorHint="@color/white" />
 
@@ -96,7 +96,7 @@
         //username design
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/username_text_field_design"
+            android:id="@+id/phone_number"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -107,7 +107,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="username"
+                android:hint="PhoneNumber"
                 android:inputType="text"
                 android:textColorHint="@color/white" />
 
@@ -122,10 +122,10 @@
             android:layout_height="match_parent"
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
-            android:id="@+id/password_input_field"
+            android:id="@+id/password_register"
             app:passwordToggleEnabled="true"
-            app:passwordToggleTint="@color/purple"
-            android:hint="password">
+            app:passwordToggleTint="@color/white"
+            android:hint="Password">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -136,30 +136,34 @@
     </LinearLayout>
 
     <TextView
+        android:onClick="loginbuttonclick"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Already Have an Account"
         android:id="@+id/already_have_account"
         android:textSize="16sp"
-        android:textColor="@color/purple"
+        android:textColor="@color/white"
         android:fontFamily="@font/baloo"
         android:layout_marginBottom="5dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_marginTop="5dp"/>
+        android:layout_marginTop="5dp"
+        tools:ignore="OnClick,UsingOnClickInXml" />
 
     <androidx.appcompat.widget.AppCompatButton
+        android:onClick="registerbuttonclick"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="SIGN UP "
         android:textSize="20dp"
-        android:background="@color/purple"
+        android:background="@color/flaming2"
         android:fontFamily="@font/baloo"
         android:textColor="@color/white"
         android:layout_gravity="center"
         android:layout_marginBottom="5dp"
         android:layout_marginLeft="100dp"
-        android:layout_marginRight="100dp"/>
+        android:layout_marginRight="100dp"
+        tools:ignore="OnClick,UsingOnClickInXml" />
 
 
 </LinearLayout>
