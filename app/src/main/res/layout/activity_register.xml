@@ -29,7 +29,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_margin="10dp"
+        android:padding="10dp">
 
         //Full Name
         <com.google.android.material.textfield.TextInputLayout
@@ -45,6 +48,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="FullName"
+                android:drawableLeft="@drawable/person_black"
+                android:drawablePadding="10dp"
                 android:inputType="text"
                 android:textColorHint="@color/white" />
 
@@ -67,6 +72,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="UserName"
+                android:drawableLeft="@drawable/person_black"
+                android:drawablePadding="10dp"
                 android:inputType="text"
                 android:textColorHint="@color/white" />
 
@@ -87,6 +94,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Email"
+                android:drawableLeft="@drawable/email_black"
+                android:drawablePadding="10dp"
                 android:inputType="textEmailAddress"
                 android:textColorHint="@color/white" />
 
@@ -108,6 +117,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="PhoneNumber"
+                android:drawableLeft="@drawable/phone_black"
+                android:drawablePadding="10dp"
                 android:inputType="text"
                 android:textColorHint="@color/white" />
 
@@ -130,7 +141,10 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPassword" />
+                android:inputType="textPassword"
+                android:drawableStart="@drawable/security_black"
+                android:drawableLeft="@drawable/security_black"
+                android:drawablePadding="10dp"/>
         </com.google.android.material.textfield.TextInputLayout>
 
     </LinearLayout>

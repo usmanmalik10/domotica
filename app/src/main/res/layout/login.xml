@@ -56,8 +56,8 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:drawableStart="@drawable/ic_baseline_person_24"
-                android:drawableLeft="@drawable/ic_baseline_person_24"
+                android:drawableLeft="@drawable/person_white"
+                android:drawablePadding="10dp"
                 android:hint="username"
                 android:inputType="text"
                 android:textColorHint="@color/white" />
@@ -81,8 +81,9 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:drawableStart="@drawable/ic_baseline_security_24"
-                android:drawableLeft="@drawable/ic_baseline_security_24"
+                android:drawableStart="@drawable/security_white"
+                android:drawableLeft="@drawable/security_white"
+                android:drawablePadding="10dp"
                 android:inputType="textPassword" />
         </com.google.android.material.textfield.TextInputLayout>
 
