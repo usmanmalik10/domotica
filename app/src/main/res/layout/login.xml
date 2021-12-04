@@ -60,6 +60,7 @@
                 android:drawablePadding="10dp"
                 android:hint="username"
                 android:inputType="text"
+                android:textColor="@color/black"
                 android:textColorHint="@color/white" />
 
 

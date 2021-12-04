@@ -22,10 +22,10 @@
             android:name=".Register"
             android:exported="false" />
         <activity
-            android:name=".splash"
+            android:name=".login"
             android:exported="false" />
         <activity
-            android:name=".login"
+            android:name=".splash"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
