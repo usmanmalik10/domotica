@@ -51,7 +51,7 @@ public class login extends AppCompatActivity {
                     username_var.setError(null);
                     username_var.setErrorEnabled(false);
                     if (!password_.isEmpty()){
-                        username_var.setError(null);
+                        password_var.setError(null);
                         password_var.setErrorEnabled(false);
 
                         final String username_data = username_var.getEditText().getText().toString();
