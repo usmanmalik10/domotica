@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "969998555327",
+    "project_id": "domotica-75972",
+    "storage_bucket": "domotica-75972.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:969998555327:android:bc6d605dd29c290c7e4e0a",
+        "android_client_info": {
+          "package_name": "com.example.domotica"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "969998555327-t8rnjq2i3hmlor1lfh8v8id62ai1hm37.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4Nu2XQsZHAczbEDrPBl5wS7suGlkI12c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "969998555327-t8rnjq2i3hmlor1lfh8v8id62ai1hm37.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
