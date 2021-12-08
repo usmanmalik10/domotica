@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DOMOTICA">
         <activity
+            android:name=".listview"
+            android:exported="false" />
+        <activity
             android:name=".contact_us"
             android:exported="false" />
         <activity

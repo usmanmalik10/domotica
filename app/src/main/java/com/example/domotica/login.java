@@ -65,7 +65,6 @@ public class login extends AppCompatActivity {
                         check_username.addListenerForSingleValueEvent(new ValueEventListener() {
                             @Override
                             public void onDataChange(@NonNull DataSnapshot snapshot) {
-
                                 if (snapshot.exists()){
                                     username_var.setError(null);
                                     username_var.setErrorEnabled(false);
@@ -77,61 +76,43 @@ public class login extends AppCompatActivity {
                                         Intent intent = new Intent(getApplicationContext(),login.class);
                                         startActivity(intent);
                                         finish();
-
                                     }
                                     else {
                                         password_var.setError("Wrong Password");
                                     }
-
                                 }
                                 else {
                                     username_var.setError("User does not exists");
                                 }
-
                             }
-
                             @Override
                             public void onCancelled(@NonNull DatabaseError error) {
 
                             }
                         });
-
-
-
                     }
                     else {
                         password_var.setError("Please Enter the password");
                     }
-
                 }
                 else {
                     username_var.setError("Please Enter the Username");
                 }
-
-
             }
         });
-
         loginbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(getApplicationContext(),home.class);
                 startActivity(intent);
-
             }
         });
-
         tv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(getApplicationContext(),Register.class);
                 startActivity(intent);
-
             }
         });
-
-
     }
-
-
 }
